@@ -436,7 +436,7 @@ And for the users the platform enables them to browse through beauty salons base
     ],
     techstack: [
       { tech: "NextJS", icon: <NextjsIcon className="size-4 md:size-6" /> },
-      { tech: "React Query", icon: <RQuery className="size-4 md:size-6" /> },
+      { tech: "RTK Query", icon: <ReduxIcon className="size-4 md:size-6" /> },
       {
         tech: "TypeScript",
         icon: <TypescriptIcon className="size-4 md:size-6" />,
@@ -495,7 +495,7 @@ And for the users the platform enables them to browse through beauty salons base
         tech: "React Native",
         icon: <ReactjsIcon className="size-4 md:size-6" />,
       },
-      { tech: "React Query", icon: <RQuery className="size-4 md:size-6" /> },
+      { tech: "RTK Query", icon: <ReduxIcon className="size-4 md:size-6" /> },
       {
         tech: "TypeScript",
         icon: <TypescriptIcon className="size-4 md:size-6" />,
