@@ -11,7 +11,7 @@ import TechStack from "@/app/projects/components/Techstack";
 import ArrowRightIcon from "@/assets/icons/arrow-up-right.svg";
 import Description from "@/app/projects/components/Description";
 import FuturePlans from "@/app/projects/components/FuturePlans";
-
+import HomeIcon from "@/assets/icons/homeIcon.svg"
 export default function Project({ params }: { params: { name: string } }) {
   const [project, ...other] = PORTFOLIO_PROJECT_DETAILS.filter(
     (item) => item.slug === params.name
@@ -30,24 +30,26 @@ export default function Project({ params }: { params: { name: string } }) {
       <div className="container py-12">
         <Heading projectName={project.projectName} />
         <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
-        <ShowImages images={project.images} />
+        <ShowImages images={project.images} project={project}/>
         <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
         <Description description={project.description} />
         <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
         <Features features={project.features} />
         <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
         <TechStack techstack={project.techstack} />
+      {project.futurePlans?.length>0 && <>
         <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
         <FuturePlans futurePlans={project.futurePlans} />
+      </>}
         <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
-        <Links githubLink={project.githubLink} liveLink={project.link} />
+        <Links githubLink={project.githubLink} liveLink={project.link} isVideoAvailable={project?.isVideoAvailable} appType={project?.appType}/>
         <div className="mt-12 ">
           <Link href="/" className="flex justify-center items-center">
-            <button className="w-1/3 inline-flex justify-center items-center gap-3 px-4 py-2 bg-gradient-to-r from-emerald-300 to-sky-400 text-gray-950 rounded-lg h-12">
-              <span className="md:text-xl text-base">Back to Home</span>
+            <button className="lg:w-1/3 inline-flex justify-center items-center gap-3 px-4 py-2 bg-gradient-to-r from-emerald-300 to-sky-400 text-gray-950 rounded-lg h-12">
               <span>
-                <ArrowRightIcon className="md:size-6 size-4" />
+                <HomeIcon className="md:size-6 size-4" />
               </span>
+              <span className="md:text-xl text-base">Back to Home</span>
             </button>
           </Link>
         </div>

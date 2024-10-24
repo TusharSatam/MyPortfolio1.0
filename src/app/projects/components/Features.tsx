@@ -13,7 +13,7 @@ export default function Features({
         {features.map((feature, i) => (
           <div
             key={`feature-${i + 1}`}
-            className="inline-flex items-center gap-3 text-white/30"
+            className="inline-flex items-center gap-3 text-white/70"
           >
             <span>
               <CircleCheckIcon />

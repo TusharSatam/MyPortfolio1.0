@@ -8,7 +8,7 @@ export default function TechStack({
   return (
     <div className="mt-8">
       {" "}
-      <ProjectSectionHeader heading="tech stacks" />
+      <ProjectSectionHeader heading="tech" />
       <div className="mt-4 md:mt-8 flex gap-4 items-center flex-wrap">
         {techstack.map((techstack) => (
           <div
@@ -16,7 +16,7 @@ export default function TechStack({
             className="inline-flex items-center gap-4 py-2 px-3 outline outline-2 outline-white/65 rounded-lg"
           >
             <span>{techstack.icon}</span>
-            <span className="text-sm md:text-base text-white/50">
+            <span className="text-sm md:text-base text-white/70">
               {techstack.tech}
             </span>
           </div>

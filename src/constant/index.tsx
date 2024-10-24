@@ -1,20 +1,24 @@
-import nextHireLandingPage from "@/assets/images/nexthire-landing-page-min.png";
-import nextHireBrowseJobPage from "@/assets/images/browse-job-page-min.png";
-import nextHireJobdetailsPage from "@/assets/images/job-details-page-min.png";
-import nextHirePostJobPage from "@/assets/images/post-job-page-min.png";
-import quizMasterLandingPage from "@/assets/images/quiz-master-landing-page-min.png";
-import quizMasterLatestQuizPage from "@/assets/images/quiz-master-dashboard-min.png";
-import quizMasterCategoryPage from "@/assets/images/quizzes-by-category-min.png";
-import countryAppLandingPage from "@/assets/images/home-page-min.png";
-import coutnryAppDetailsPage from "@/assets/images/country-details-page-min.png";
-import countryAppHoverState from "@/assets/images/home-page-hover-state-min.png";
-
+import tepsThumbnail from "@/assets/images/tepsThumbnail.png";
+import tepsThumbnail2 from "@/assets/images/teps2.png";
+import tepsThumbnail3 from "@/assets/images/teps3.png";
+import treatothumbnail from "@/assets/images/TreatoThumbnail.png";
+import treato2 from "@/assets/images/treato2.png";
+import treato3 from "@/assets/images/treato3.png";
+import treato4 from "@/assets/images/treato4.png";
+import voodle2 from "@/assets/images/voodle2.png";
+import voodle3 from "@/assets/images/voodle3.png";
+import voodle4 from "@/assets/images/voodle4.png";
+import sukriya2 from "@/assets/images/sukriya2.png";
+import sukriya3 from "@/assets/images/sukriya3.png";
+import sukriya4 from "@/assets/images/sukriya4.png";
+import FirebaseIcon from "@/assets/icons/firebaseIcon.svg";
+import Razorpay from "@/assets/icons/razorpayIcon.svg";
+import sukriyaThumbnail from "@/assets/images/sukriyaThumbnail.png";
 import memojiAvatar1 from "@/assets/images/memoji-avatar-1.png";
 import memojiAvatar2 from "@/assets/images/memoji-avatar-2.png";
 import memojiAvatar3 from "@/assets/images/memoji-avatar-3.png";
 import memojiAvatar4 from "@/assets/images/memoji-avatar-4.png";
 import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
-
 import JavascriptIcon from "@/assets/icons/javascript-icon.svg";
 import TypescriptIcon from "@/assets/icons/typescript-icon.svg";
 import ReactjsIcon from "@/assets/icons/reactjs-icon.svg";
@@ -22,8 +26,13 @@ import NodejsIcon from "@/assets/icons/nodejs-icon.svg";
 import MongodbIcon from "@/assets/icons/mongodb-icon.svg";
 import ExpressIcon from "@/assets/icons/express-icon.svg";
 import NextjsIcon from "@/assets/icons/nextjs-icon.svg";
-import PostgresIcon from "@/assets/icons/postgres-icon.svg";
-import PrismaIcon from "@/assets/icons/prisma-icon.svg";
+import ReduxIcon from "@/assets/icons/redux.svg";
+import RQuery from "@/assets/icons/RQuery.svg";
+import GSAPICON from "@/assets/icons/gsap.svg";
+import ShadcnUI from "@/assets/icons/ShadcnUI.svg";
+import Framermotion from "@/assets/icons/framermotion.svg";
+import AndroidStudioIcon from "@/assets/icons/androidstudio.svg";
+import voodleThumbnail from "@/assets/images/VoodleThumbnail.png";
 import TailwindIcon from "@/assets/icons/tailwind-icon.svg";
 import HtmlIcon from "@/assets/icons/html-icon.svg";
 import CssIcon from "@/assets/icons/css-icon.svg";
@@ -32,12 +41,19 @@ import FootballIcon from "@/assets/icons/ball-football-icon.svg";
 import MusicIcon from "@/assets/icons/headphone-icon.svg";
 import TravelIcon from "@/assets/icons/travelling-icon.svg";
 import ChessIcon from "@/assets/icons/chess-pawn-icon.svg";
+import CodingIcon from "@/assets/icons/CodingIcon.svg";
 import ReadingIcon from "@/assets/icons/book-icon.svg";
 import WritingIcon from "@/assets/icons/edit-document-icon.svg";
 
 // ---------- HOBBIES ----------- //
 
 export const MY_HOBBIES = [
+  {
+    hobby: "Coding",
+    icon: <CodingIcon className="size-4" />,
+    top: "5%",
+    left: "10%",
+  },
   {
     hobby: "Football",
     icon: <FootballIcon className="size-4" />,
@@ -51,7 +67,7 @@ export const MY_HOBBIES = [
     left: "50%",
   },
   {
-    hobby: "Chess",
+    hobby: "Gaming",
     icon: <ChessIcon className="size-4" />,
     top: "35%",
     left: "10%",
@@ -86,92 +102,138 @@ export const MY_HOBBIES = [
 
 export const PORTFOLIO_PROJECT = [
   {
-    company: "QuizMaster",
-    year: "Aug,2024 - Sep,2024",
-    title: "A Platform to enhance your knowledge",
-    techStacks: [
-      { tech: "TypeScript", icon: <TypescriptIcon /> },
-      { tech: "ReactJS", icon: <ReactjsIcon /> },
-      { tech: "NodeJS", icon: <NodejsIcon /> },
-      { tech: "MongoDB", icon: <MongodbIcon /> },
-    ],
-    results: [
-      {
-        title:
-          "Allows users to attempt quizzes with various categories and difficulty levels.",
-      },
-      {
-        title: "Implemented JWT and bcrypt for safe login and data protection.",
-      },
-      {
-        title:
-          "Utilized React Hook Form and Zod for seamless form validation and error handling.",
-      },
-    ],
-    link: "https://quizmaster-r62b.onrender.com",
-    githubLink: "https://github.com/suvasis-patra/quiz-application",
-    image: quizMasterLandingPage,
-    slug: "projects/quiz-master",
-  },
-  {
-    company: "NextHire",
-    year: "Aug,2024- ONGING",
-    title: "Job Posting and Application Platform",
-    techStacks: [
-      { tech: "TypeScript", icon: <TypescriptIcon /> },
-      { tech: "NextJS", icon: <NextjsIcon /> },
-      { tech: "PostrgesSQL", icon: <PostgresIcon /> },
-      { tech: "Prisma", icon: <PrismaIcon /> },
-      { tech: "Tailwind CSS", icon: <TailwindIcon /> },
-    ],
-
-    results: [
-      {
-        title:
-          "Integrated Stripe for secure payments, supporting premium job posts and subscriptions.",
-      },
-      {
-        title:
-          "Implemented job search by location, keywords, and filters for a personalized experience.",
-      },
-      {
-        title:
-          "Built with Next.js, Tailwind CSS, and React Hook Form for optimal performance and smooth forms.",
-      },
-    ],
-    link: "https://nexthire-ghbkjgaqq-suvasis-projects-0f7f453b.vercel.app/",
-    githubLink: "https://github.com/suvasis-patra/nexthire",
-    image: nextHireLandingPage,
-    slug: "projects/next-hire",
-  },
-  {
-    company: "Where in the world",
-    year: "Aug,2024",
+    company: "Sukriya",
+    year: "Aug,2024 - Oct,2024",
     title: "Know the details about any contry",
     techStacks: [
       { tech: "TypeScript", icon: <TypescriptIcon /> },
       { tech: "ReactJS", icon: <ReactjsIcon /> },
       { tech: "Tailwind CSS", icon: <TailwindIcon /> },
     ],
-
     results: [
       {
         title:
-          "Users can easily search countries by name and filter by language, currency, and continent.",
+          "Developed a freelance platform connecting artists with job opportunities.",
       },
       {
         title:
-          "React Query and Axios ensure fast, optimized data fetching and caching for smooth performance.",
+          "Implemented features for job posting, artist profiles, and application submissions.",
       },
       {
         title:
-          "TypeScript boosts code reliability, making the app more maintainable and scalable.",
+          "Designed a project management section for artists and customers to oversee their projects.",
+      },
+      {
+        title:
+          "Created a responsive and user-friendly interface using Next.js and Tailwind CSS.",
       },
     ],
-    link: "https://astounding-toffee-63321f.netlify.app/",
-    githubLink: "https://github.com/suvasis-patra/country_app",
-    image: countryAppLandingPage,
-    slug: "projects/where-in-the-world",
+    link: "http://shukriya-fe-beige.vercel.app/",
+    image: sukriyaThumbnail,
+    slug: "projects/sukriya",
+    isVideoAvailable: false,
+    appType: "web",
+  },
+  {
+    company: "Voodle",
+    year: "May, 2024 - July, 2024",
+    title: "Global Social Media Platform",
+    techStacks: [
+      { tech: "React Native", icon: <ReactjsIcon /> },
+      { tech: "TypeScript", icon: <TypescriptIcon /> },
+      { tech: "Android Studio", icon: <AndroidStudioIcon /> },
+    ],
+    results: [
+      {
+        title:
+          "Developed a global social media platform enabling users to connect through posts, photos, and videos.",
+      },
+      // {
+      //   title: "Implemented multimedia posting features for users to upload and share photos and videos."
+      // },
+      {
+        title:
+          "Designed user profiles showcasing posts, followers, and media galleries.",
+      },
+      {
+        title:
+          "Created an interactive feed displaying real-time updates from followed users with like, comment, and share options.",
+      },
+      {
+        title: "Integrated real-time push notifications",
+      },
+    ],
+    link: "http://voodle-app-url.com", // Replace with the actual URL
+    image: voodleThumbnail, // Replace with your Voodle thumbnail image variable
+    slug: "projects/voodle",
+    isVideoAvailable: false,
+    appType: "app",
+  },
+  {
+    company: "Treato",
+    year: "Sep,2023 - ONGING",
+    title: "Wellness and Fitness Services",
+    techStacks: [
+      { tech: "TypeScript", icon: <TypescriptIcon /> },
+      { tech: "ReactJS", icon: <ReactjsIcon /> },
+      { tech: "NodeJS", icon: <NodejsIcon /> },
+      { tech: "MongoDB", icon: <MongodbIcon /> },
+      { tech: "Tailwind CSS", icon: <TailwindIcon /> },
+    ],
+    results: [
+      {
+        title:
+          "Implemented search, filtering, and location-based salon browsing for enhanced user experience.",
+      },
+      {
+        title:
+          "Integrated Razorpay for secure online payments for salon bookings.",
+      },
+      {
+        title:
+          "Built tools for salon owners to manage appointments and client engagement.",
+      },
+      {
+        title:
+          "Build a responsive, user-friendly interface with React.js, Redux and Tailwind CSS.",
+      },
+    ],
+    image: treatothumbnail,
+    slug: "projects/treato",
+    isVideoAvailable: true,
+    videoURL: "https://youtu.be/3FYKbLmdBsw",
+    appType: "web",
+  },
+  {
+    company: "TEPS",
+    year: "Aug,2023- Sep,2023",
+    title: "A Collaborative Platform for Teachers",
+    techStacks: [
+      { tech: "TypeScript", icon: <TypescriptIcon /> },
+      { tech: "ReactJS", icon: <ReactjsIcon /> },
+      { tech: "NodeJS", icon: <NodejsIcon /> },
+      { tech: "MongoDB", icon: <MongodbIcon /> },
+      { tech: "Tailwind CSS", icon: <TailwindIcon /> },
+    ],
+    results: [
+      {
+        title:
+          "Built a collaborative platform for teachers to share strategies and notes.",
+      },
+      {
+        title:
+          "Developed features to allow users to read, bookmark, and save strategies.",
+      },
+      {
+        title:
+          "Implemented a responsive and user-friendly UI using React, Context API, and Tailwind CSS.",
+      },
+    ],
+    link: "https://teps.school",
+    image: tepsThumbnail,
+    slug: "projects/teps",
+    isVideoAvailable: false,
+    appType: "web",
   },
 ];
 
@@ -207,16 +269,29 @@ export const TOOLBOX = [
     icon: <MongodbIcon className="size-4 md:size-6" />,
   },
   {
+    tool: "Redux",
+    icon: <ReduxIcon className="size-4 md:size-6" />,
+  },
+  {
+    tool: "React Query",
+    icon: <RQuery className="size-4 md:size-6" />,
+  },
+
+  {
+    tool: "GSAP",
+    icon: <GSAPICON className="size-4 md:size-6" />,
+  },
+  {
+    tool: "shadcn/ui",
+    icon: <ShadcnUI className="size-4 md:size-6" />,
+  },
+  {
+    tool: "Framer Motion",
+    icon: <Framermotion className="size-4 md:size-6" />,
+  },
+  {
     tool: "tailwind CSS",
     icon: <TailwindIcon className="size-4 md:size-6" />,
-  },
-  {
-    tool: "PostgresSQL",
-    icon: <PostgresIcon className="size-4 md:size-6" />,
-  },
-  {
-    tool: "Prsima",
-    icon: <PrismaIcon className="size-4 md:size-6" />,
   },
   {
     tool: "HTML5",
@@ -232,35 +307,36 @@ export const TOOLBOX = [
 
 export const PORTFOLIO_PROJECT_DETAILS = [
   {
-    projectName: "QuizMaster",
-    slug: "quiz-master",
-    description:
-      "QuizMaster is a web app for creating and taking customizable quizzes. Users can design quizzes with various difficulty levels and categories, offering a streamlined and engaging experience for both learners and creators. Built with React and Node.js, QuizMaster combines modern technology with intuitive design.",
+    projectName: "TEPS",
+    slug: "teps",
+    description: `TEP School is an innovative platform designed exclusively for educators, fostering a collaborative community where teachers can share strategies, notes, and best practices. The platform enables users to read, bookmark, and save valuable teaching resources, facilitating knowledge-sharing and enhancing professional development. By providing a centralized space for educators to exchange insights, TEP School empowers teachers to enhance their teaching methods and stay connected with the latest trends in education.`,
     features: [
-      { title: "Create quizzes with various levels, categories, and tags." },
       {
         title:
-          "Engaging and user-friendly interface for quiz creation and participation.",
+          "Collaborative space for educators to share strategies and best practices.",
       },
       {
-        title: "Immediate feedback on quiz answers to enhance the experience.",
+        title:
+          "Seamless filter options for users to easily find the resources they need.",
       },
-      { title: "Efficient data management with React Hook Form." },
-      { title: "Fully responsive layout for all devices." },
+      {
+        title:
+          "AI-powered assistance: Users can choose a topic, and the AI generates responses or provides more information on that topic using ChatGPT.",
+      },
+      {
+        title:
+          "Bookmark and save valuable teaching resources to enhance professional development.",
+      },
+      {
+        title:
+          "Personalized page for users to track their progress and resources.",
+      },
     ],
     techstack: [
       { tech: "ReactJS", icon: <ReactjsIcon className="size-4 md:size-6" /> },
       {
         tech: "TypeScript",
         icon: <TypescriptIcon className="size-4 md:size-6" />,
-      },
-      {
-        tech: "React router dom",
-        icon: <ReactjsIcon className="size-4 md:size-6" />,
-      },
-      {
-        tech: "React Query",
-        icon: <ReactjsIcon className="size-4 md:size-6" />,
       },
       {
         tech: "Tailwind CSS",
@@ -269,107 +345,37 @@ export const PORTFOLIO_PROJECT_DETAILS = [
       { tech: "NodeJS", icon: <NodejsIcon className="size-4 md:size-6" /> },
       { tech: "ExpressJS", icon: <ExpressIcon className="size-4 md:size-6" /> },
       { tech: "MongoDB", icon: <MongodbIcon className="size-4 md:size-6" /> },
-      { tech: "JWT", icon: <ReactjsIcon className="size-4 md:size-6" /> },
     ],
-    images: [
-      quizMasterLandingPage,
-      quizMasterCategoryPage,
-      quizMasterLatestQuizPage,
-    ],
-    futurePlans: [
-      {
-        title:
-          "Use AI to assist in generating quizzes based on user input or predefined criteria.",
-      },
-      {
-        title:
-          "Allow users to create quizzes by uploading PDF documents, which are then processed to generate quiz questions.",
-      },
-      {
-        title:
-          "Integrate a payment gateway to purchase credits for accessing and playing quizzes.",
-      },
-    ],
-    link: "https://quizmaster-r62b.onrender.com",
-    githubLink: "https://github.com/suvasis-patra/quiz-application",
+    images: [tepsThumbnail, tepsThumbnail2, tepsThumbnail3],
+    futurePlans: [],
+    link: "https://teps.school",
+    isVideoAvailable: false,
   },
   {
-    projectName: "NextHire",
-    slug: "next-hire",
-    description:
-      "NextHire is a job portal that allows users to post and apply for job listings. It offers a streamlined experience for employers to list job openings and for job seekers to find opportunities based on various filters. The platform includes features for secure payments and a tailored job-seeking experience.",
+    projectName: "Treato",
+    slug: "treato",
+    description: `Treato is India’s first subscription-free, web-based beauty platform that connects salon businesses with consumers; by managing appointments, consumer ratings & reviews, marketing and creating client databases.
+And for the users the platform enables them to browse through beauty salons based on the location, reviews, photos & descriptions, compare the services and book appointments. `,
     features: [
       {
         title:
-          "Employers can post job listings with detailed descriptions and requirements.",
+          "Seamless salon browsing: Users can browse salons based on location, reviews, photos, and service descriptions.",
       },
       {
         title:
-          "Job seekers can search and filter jobs by location, keywords, and other criteria.",
+          "User-friendly appointment booking system: Easily book appointments with salons, comparing services and availability.",
       },
       {
         title:
-          "Secure payment integration for premium job postings and subscription options.",
-      },
-      { title: "Responsive design for easy access on all devices." },
-      {
-        title:
-          "User-friendly interface for seamless job posting and application processes.",
-      },
-    ],
-    techstack: [
-      { tech: "NextJS", icon: <NextjsIcon className="size-4 md:size-6" /> },
-      {
-        tech: "TypeScript",
-        icon: <TypescriptIcon className="size-4 md:size-6" />,
-      },
-      {
-        tech: "Tailwind CSS",
-        icon: <TailwindIcon className="size-4 md:size-6" />,
-      },
-      { tech: "Stripe", icon: <ReactjsIcon className="size-4 md:size-6" /> },
-      {
-        tech: "PostgreSQL",
-        icon: <PostgresIcon className="size-4 md:size-6" />,
-      },
-      { tech: "Prisma", icon: <PrismaIcon className="size-4 md:size-6" /> },
-      { tech: "Next Auth", icon: <NextjsIcon className="size-4 md:size-6" /> },
-    ],
-    images: [
-      nextHireLandingPage,
-      nextHireBrowseJobPage,
-      nextHireJobdetailsPage,
-      nextHirePostJobPage,
-    ],
-    futurePlans: [
-      {
-        title:
-          "Implement AI for matching job seekers with job listings based on their profiles and preferences.",
+          "Dynamic search and filtering: Advanced search functionality allows users to find salons based on specific criteria.",
       },
       {
         title:
-          "Enhance user experience with advanced search and filter options.",
+          "Salon management tools: Salons can manage appointments, consumer engagement, and create client databases.",
       },
-    ],
-    link: "https://nexthire-ghbkjgaqq-suvasis-projects-0f7f453b.vercel.app/",
-    githubLink: "https://github.com/suvasis-patra/nexthire",
-  },
-  {
-    projectName: "Where in the World?",
-    slug: "where-in-the-world",
-    description:
-      "Where in the World is an interactive web application that helps users explore and learn about various countries around the globe. It features a user-friendly interface for discovering country details, including location, population, and key facts, using a visually appealing map and search functionalities.",
-    features: [
-      { title: "Interactive world map to explore different countries." },
-      { title: "Search functionality to find countries by name or criteria." },
       {
         title:
-          "Detailed country profiles including population, capital, and other key facts.",
-      },
-      { title: "Responsive design for optimal viewing on various devices." },
-      {
-        title:
-          "User-friendly interface with intuitive navigation and interactions.",
+          "Consumer reviews and ratings: Users can leave reviews and ratings, providing valuable feedback to salons and other users.",
       },
     ],
     techstack: [
@@ -382,46 +388,142 @@ export const PORTFOLIO_PROJECT_DETAILS = [
         tech: "Tailwind CSS",
         icon: <TailwindIcon className="size-4 md:size-6" />,
       },
-      {
-        tech: "React Router DOM",
-        icon: <ReactjsIcon className="size-4 md:size-6" />,
-      },
-      {
-        tech: "React Query",
-        icon: <ReactjsIcon className="size-4 md:size-6" />,
-      },
-      {
-        tech: "Rest Countries API",
-        icon: <ReactjsIcon className="size-4 md:size-6" />,
-      },
+      { tech: "NodeJS", icon: <NodejsIcon className="size-4 md:size-6" /> },
+      { tech: "ExpressJS", icon: <ExpressIcon className="size-4 md:size-6" /> },
+      { tech: "MongoDB", icon: <MongodbIcon className="size-4 md:size-6" /> },
+      { tech: "Razorpay", icon: <Razorpay className="size-4 md:size-6" /> },
     ],
-    images: [
-      countryAppLandingPage,
-      countryAppHoverState,
-      coutnryAppDetailsPage,
-    ],
+    images: [treatothumbnail, treato2, treato3, treato4],
     futurePlans: [
+
+    ],
+    link: "https://www.youtube.com/watch?v=3FYKbLmdBsw",
+    isVideoAvailable: true,
+    appType: "web",
+  },
+  {
+    projectName: "Sukriya",
+    slug: "sukriya",
+    description:
+      "Sukriya is a dynamic freelance platform designed to connect artists with customers seeking creative talent. It provides a space for artists to showcase their skills and earn money by applying for job requests posted by customers. The platform streamlines the entire process, from job posting to project completion, empowering artists to find opportunities based on their creative talents. Built using the MERN stack, Sukriya features a responsive design, seamless navigation, and real-time updates for both artists and customers.",
+    features: [
       {
         title:
-          "Integrate additional data sources for more comprehensive country information.",
+          "Job posting system for customers to post freelance projects with specific requirements and deadlines.",
       },
       {
         title:
-          "Enhance the map functionality with more interactive features and customization options.",
+          "Artist profiles with portfolios, showcasing previous work and skills.",
+      },
+      {
+        title:
+          "Job applications with proposals and timelines, allowing artists to apply directly from their profiles.",
+      },
+      {
+        title:
+          "Real-time updates and notifications when jobs are posted, applied for, or completed.",
+      },
+      {
+        title:
+          "Personalized dashboards for both customers and artists to manage job posts, applications, and job history.",
+      },
+      {
+        title:
+          "Responsive design optimized for both desktop and mobile platforms.",
+      },
+      // { title: "Secure payment integration to handle transactions between artists and customers." },
+    ],
+    techstack: [
+      { tech: "NextJS", icon: <NextjsIcon className="size-4 md:size-6" /> },
+      { tech: "React Query", icon: <RQuery className="size-4 md:size-6" /> },
+      {
+        tech: "TypeScript",
+        icon: <TypescriptIcon className="size-4 md:size-6" />,
+      },
+      {
+        tech: "Tailwind CSS",
+        icon: <TailwindIcon className="size-4 md:size-6" />,
+      },
+      { tech: "NodeJS", icon: <NodejsIcon className="size-4 md:size-6" /> },
+      { tech: "ExpressJS", icon: <ExpressIcon className="size-4 md:size-6" /> },
+      { tech: "MongoDB", icon: <MongodbIcon className="size-4 md:size-6" /> },
+    ],
+    images: [sukriyaThumbnail, sukriya2, sukriya3, , sukriya4],
+    futurePlans: [],
+    link: "https://shukriya-fe-beige.vercel.app/",
+    isVideoAvailable: false,
+    appType: "web",
+  },
+  {
+    projectName: "Voodle",
+    slug: "voodle",
+    description:
+      "Voodle is a global social media platform that allows users to connect by sharing photos and videos, following others, and engaging with interactive feeds. It offers a seamless experience for users to showcase their multimedia content and stay updated with their network.",
+    features: [
+      {
+        title:
+          "Responsive mobile application for Android and iOS, providing a seamless multimedia sharing experience.",
+      },
+      {
+        title:
+          "Intuitive user interface for easy navigation and interaction with photos, videos, and posts.",
+      },
+      {
+        title:
+          "User profiles displaying personalized posts, followers, and multimedia galleries.",
+      },
+      {
+        title:
+          "Interactive feeds that show real-time updates from followed users with options to like, comment, and share.",
+      },
+      {
+        title:
+          "Real-time push notifications for likes, comments, follows, and other user interactions.",
+      },
+      {
+        title:
+          "Follow system that allows users to follow others and stay updated with their content in personalized feeds.",
+      },
+      {
+        title:
+          "Multimedia upload functionality enabling users to post photos and videos on their profiles and feeds.",
       },
     ],
-    link: "https://astounding-toffee-63321f.netlify.app/",
-    githubLink: "https://github.com/suvasis-patra/country_app",
+    techstack: [
+      {
+        tech: "React Native",
+        icon: <ReactjsIcon className="size-4 md:size-6" />,
+      },
+      { tech: "React Query", icon: <RQuery className="size-4 md:size-6" /> },
+      {
+        tech: "TypeScript",
+        icon: <TypescriptIcon className="size-4 md:size-6" />,
+      },
+      {
+        tech: "Firebase",
+        icon: <FirebaseIcon className="size-4 md:size-6" />,
+      },
+      { tech: "NodeJS", icon: <NodejsIcon className="size-4 md:size-6" /> },
+      { tech: "ExpressJS", icon: <ExpressIcon className="size-4 md:size-6" /> },
+      { tech: "MongoDB", icon: <MongodbIcon className="size-4 md:size-6" /> },
+    ],
+    images: [voodleThumbnail, voodle2, voodle3, , voodle4],
+    futurePlans: [],
+    link: "https://play.google.com/store/apps/details?id=com.voodle&pcampaignid=web_share",
+    isVideoAvailable: false,
+    appType: "app",
   },
 ];
 
 // ----------------  SOCIAL LINKS -------------- //
 
 export const SOCIAL_LINKS = [
-  { title: "Twitter", href: "https://x.com/Patra2Suvasis" },
-  { title: "Linkedin", href: "https://www.linkedin.com/in/suvasispatra/" },
-  { title: "Gmail", href: "mailto:suvasispatra10@gmail.com" },
-  { title: "Instagram", href: "https://www.instagram.com/suvasisp5/" },
+  {
+    title: "Linkedin",
+    href: "https://www.linkedin.com/in/tushar-satam-0a1478268/",
+  },
+  { title: "Github", href: "https://github.com/TusharSatam" },
+  { title: "Gmail", href: "mailto:tsatam91@gmail.com" },
 ];
 
 // ---------------- FEATUERS ----------------- //

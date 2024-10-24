@@ -5,25 +5,27 @@ export const ContactSection = () => {
     <section className="py-16 lg:py-24 lg:pt-20" id="contact">
       <div className="container">
         {" "}
-        <div className="bg-gradient-to-r from-emerald-300 to-sky-400 text-gray-950 text-center md:text-left rounded-3xl px-10 py-8 relative overflow-hidden z-0">
+        <div className="bg-gradient-to-r from-emerald-400 to-sky-400 text-gray-950 text-center md:text-left rounded-3xl px-10 py-8 relative overflow-hidden z-0">
           <div
             className="absolute inset-0 -z-10 opacity-5"
             style={{
               backgroundImage: `url(${grainBackground.src})`,
             }}
           ></div>
-          <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-center">
+          <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-center text-white">
             <div>
               <h2 className="font-serif text-2xl md:text-3xl">
-                Let&apos;s create something amazing togethre!
+                Let&apos;s build something extraordinary together!
               </h2>
               <p className="text-sm mt-2 md:text-base">
-                Ready to bring your next project to life? Let&apos;s connect and
-                discuss how can I help you achive your goals
+                Have an idea that needs to come to life? Let&apos;s collaborate
+                and turn your vision into reality. I&apos;m here to help you
+                craft solutions that not only meet but exceed your goals.
               </p>
             </div>
+
             <a
-              href="mailto:suvasispatra10@gmail.com"
+              href="mailto:tsatam91@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
             >

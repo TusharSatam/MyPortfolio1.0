@@ -2,10 +2,20 @@ import Image from "next/image";
 
 import HeroOrbit from "@/components/HeroOrbit";
 import StarIcon from "@/assets/icons/star.svg";
+import ReactIcon from "@/assets/icons/react.svg";
+import HtmlIcon from "@/assets/icons/html5.svg";
+import NextjsIcon from "@/assets/icons/nextjs-icon.svg";
+import ReactjsIcon from "@/assets/icons/reactjs-icon.svg";
+import JsIcon from "@/assets/icons/javascript-icon.svg";
+import Github from "@/assets/icons/github.svg";
+
+import CSSIcon from "@/assets/icons/css3.svg";
 import grainImage from "@/assets/images/grain.jpg";
+import RQuery from "@/assets/icons/RQuery.svg"
 import SparkleIcon from "@/assets/icons/sparkle.svg";
 import ArrowDown from "@/assets/icons/arrow-down.svg";
-import mimojiImage from "@/assets/images/memoji-computer.png";
+import mimojiImage from "@/assets/images/HeroAvatar.png";
+
 export const HeroSection = () => {
   return (
     <section
@@ -23,77 +33,79 @@ export const HeroSection = () => {
         <div className="size-[820px] hero-ring"></div>
         <div className="size-[1020px] hero-ring"></div>
         <div className="size-[1220px] hero-ring"></div>
+
+        {/* Adjusted Spin Durations */}
         <HeroOrbit
           size={550}
           rotation={20}
-          spinDuration="30s"
+          spinDuration="35s"  // Smooth duration
           shouldSpin
-          // starSpinDuration="6s"
-          // shouldStarSpin
         >
-          <StarIcon className="text-emerald-300 size-12" />
+          <NextjsIcon className="text-emerald-300 size-12" />
         </HeroOrbit>
+
         <HeroOrbit
           size={590}
           rotation={98}
-          spinDuration="32s"
+          spinDuration="33s"  // Slightly slower
           shouldSpin
-          // starSpinDuration="6s"
-          // shouldStarSpin
         >
-          <StarIcon className="text-emerald-300 size-8" />
+          <HtmlIcon className="text-[#e34c26] size-8" />
         </HeroOrbit>
+
         <HeroOrbit
           size={800}
           rotation={-72}
-          spinDuration="34s"
+          spinDuration="40s"  // Slowest for bigger orbit
           shouldSpin
-          // starSpinDuration="6s"
-          // shouldStarSpin
         >
-          <StarIcon className="text-emerald-300 size-28" />
+          <ReactIcon className="text-[#61dbfb] size-28" />
+        </HeroOrbit>
+
+        <HeroOrbit
+          size={430}
+          rotation={-14}
+          spinDuration="32s"  // Faster for smaller orbit
+          shouldSpin
+        >
+          <ReactjsIcon className="text-emerald-300/20 size-8" />
         </HeroOrbit>
         <HeroOrbit
           size={430}
           rotation={-14}
-          spinDuration="36s"
+          spinDuration="22s"  // Faster for smaller orbit
           shouldSpin
-          // starSpinDuration="6s"
-          // shouldStarSpin
         >
-          <SparkleIcon className="text-emerald-300/20 size-8" />
+          <RQuery className="text-emerald-300/20 size-8" />
         </HeroOrbit>
         <HeroOrbit
           size={440}
           rotation={79}
-          spinDuration="38s"
+          spinDuration="36s"  // Moderately fast
           shouldSpin
-          // starSpinDuration="6s"
-          // shouldStarSpin
         >
-          <SparkleIcon className="text-emerald-300/20 size-5" />
+          <Github className="text-[#f0db4f] size-5" />
         </HeroOrbit>
+
         <HeroOrbit
           size={530}
           rotation={178}
-          spinDuration="40s"
+          spinDuration="37s"  // Smooth and steady
           shouldSpin
-          // starSpinDuration="6s"
-          // shouldStarSpin
         >
-          <SparkleIcon className="text-emerald-300/20 size-10" />
+          <CSSIcon className="text-[#264de4] size-10" />
         </HeroOrbit>
+
         <HeroOrbit
           size={710}
           rotation={144}
-          spinDuration="42s"
+          spinDuration="39s"  // Slight variation
           shouldSpin
-          // starSpinDuration="6s"
-          // shouldStarSpin
         >
-          <SparkleIcon className="text-emerald-300/20 size-14" />
+          <JsIcon className="text-[#61dbfb] size-14" />
         </HeroOrbit>
       </div>
+
       <div className="container relative z-10">
         <div className="flex flex-col items-center gap-2">
           <Image
@@ -111,16 +123,18 @@ export const HeroSection = () => {
           </div>
         </div>
         <div className="max-w-xl mx-auto">
-          <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
-            Building exceptional user experiences
+          <h1 className="font-serif text-xl md:text-3xl text-center mt-8 tracking-wide">
+            Crafting Innovative and High-Performance Web Solutions
           </h1>
-          <p className="text-center md:text-lg mt-4 text-white/60">
-            Hi, I&apos;m{" "}
-            <span className="font-semibold text-emerald-300">Suvasis</span>, a{" "}
-            <span className="font-semibold text-emerald-300">
-              Fullstack Developer
+          <p className="text-center  mt-4 text-white/60">
+            Hello, I&apos;m{" "}
+            <span className="font-semibold text-[#0CAFFF]">Tushar</span>, a{" "}
+            <span className="font-semibold text-[#0CAFFF]">
+              Frontend Developer
             </span>{" "}
-            based in India. Let&apos;s discuss your next project.
+            from India. I specialize in React.js, Next.js, and responsive design
+            to create user-centric, high-performance web applications.
+            Let&apos;s bring your ideas to life.
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4 z-10 relative">

@@ -20,8 +20,8 @@ export const AboutSection = () => {
           description="Learn more about who I am, what I do, and what inspires me"
         />
         <div className="mt-20 flex flex-col gap-8">
-          <div className="grid grid-cols-1 md:grid-cols-5 md:gap-8 lg:grid-cols-3">
-            <Card className="h-[320px] md:col-span-2 lg:col-span-1">
+          <div className="grid grid-cols-1 md:gap-8 ">
+            {/* <Card className="h-[320px] md:col-span-2 lg:col-span-1">
               <CardHeader
                 title="My Reads"
                 description="Explore the books shaping my prespectives"
@@ -29,8 +29,8 @@ export const AboutSection = () => {
               <div className="w-40 mx-auto mt-8">
                 <Image src={bookCover} alt="book cover" />
               </div>
-            </Card>
-            <Card className="h-[320px] p-0 md:col-span-3 lg:col-span-2">
+            </Card> */}
+            <Card className="h-[320px] p-0 ">
               <CardHeader
                 title="My Toolbox"
                 description="Explore the technologies and tools I used to craft exceptional
@@ -50,18 +50,18 @@ export const AboutSection = () => {
             </Card>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-5 md:gap-8 lg:grid-cols-3">
-            <Card className="h-[320px] p-0 flex flex-col md:col-span-3 lg:col-span-2">
+            <Card className="lg:h-[320px] p-0 flex flex-col md:col-span-3 lg:col-span-2">
               <CardHeader
                 title="Beyond the code"
                 description="Explore my hobbies and interests beyond the digital world"
                 className="px-6 py-6"
               />
-              <div className="relative flex-1">
+              <div className="relative flex-1 grid grid-cols-2 lg:grid-cols-4 gap-x-2 gap-y-3 lg:gap-x-4 px-4 mb-4 lg:mb-0">
                 {MY_HOBBIES.map((item) => (
                   <div
                     key={item.hobby}
-                    className="inline-flex items-center absolute gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5"
-                    style={{ top: item.top, left: item.left }}
+                    className=" flex justify-center items-center  !h-fit gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-2"
+                    // style={{ top: item.top, left: item.left }}
                   >
                     <span>{item.icon}</span>
                     <span className="font-medium text-gray-950">
@@ -71,7 +71,7 @@ export const AboutSection = () => {
                 ))}
               </div>
             </Card>
-            <Card className="h-[320px] p-0 relative md:col-span-2 lg:col-span-1">
+            <Card className="lg:h-[320px] p-0 relative md:col-span-2 lg:col-span-1 mt-4 md:mt-0">
               <Image
                 src={mapImage}
                 alt="map"

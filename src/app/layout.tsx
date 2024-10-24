@@ -12,7 +12,7 @@ const calistoga = Calistoga({
 });
 
 export const metadata: Metadata = {
-  title: "Suvasis | My Portfolio",
+  title: "Tushar | My Portfolio",
   description: "This is my portfolio to show my skills and work",
 };
 
