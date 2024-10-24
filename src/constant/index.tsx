@@ -163,7 +163,7 @@ export const PORTFOLIO_PROJECT = [
         title: "Integrated real-time push notifications",
       },
     ],
-    link: "http://voodle-app-url.com", // Replace with the actual URL
+    link: "https://play.google.com/store/apps/details?id=com.voodle&pcampaignid=web_share", // Replace with the actual URL
     image: voodleThumbnail, // Replace with your Voodle thumbnail image variable
     slug: "projects/voodle",
     isVideoAvailable: false,
@@ -350,6 +350,7 @@ export const PORTFOLIO_PROJECT_DETAILS = [
     futurePlans: [],
     link: "https://teps.school",
     isVideoAvailable: false,
+    appType:"web"
   },
   {
     projectName: "Treato",
