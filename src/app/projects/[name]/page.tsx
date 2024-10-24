@@ -30,7 +30,7 @@ export default function Project({ params }: { params: { name: string } }) {
       <div className="container py-12">
         <Heading projectName={project.projectName} />
         <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
-        <ShowImages images={project.images} project={project}/>
+        <ShowImages images={project.images} projectName={project?.projectName}/>
         <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
         <Description description={project.description} />
         <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
@@ -42,7 +42,7 @@ export default function Project({ params }: { params: { name: string } }) {
         <FuturePlans futurePlans={project.futurePlans} />
       </>}
         <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
-        <Links githubLink={project.githubLink} liveLink={project.link} isVideoAvailable={project?.isVideoAvailable} appType={project?.appType}/>
+        <Links  liveLink={project.link} isVideoAvailable={project?.isVideoAvailable} appType={project?.appType}/>
         <div className="mt-12 ">
           <Link href="/" className="flex justify-center items-center">
             <button className="lg:w-1/3 inline-flex justify-center items-center gap-3 px-4 py-2 bg-gradient-to-r from-emerald-300 to-sky-400 text-gray-950 rounded-lg h-12">

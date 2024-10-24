@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import Image, { StaticImageData } from "next/image";
 
-export default function ShowImages({ images,project }: { images: StaticImageData[],project:object }) {
+export default function ShowImages({ images,projectName }: { images:any[],projectName:any }) {
   return (
     <div className="mt-16 lg:mt-24 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] py-4">
       <div className="flex gap-8 pr-8 flex-none animate-move-left [animation-duration:90s] hover:[animation-play-state:paused]">
@@ -16,7 +16,7 @@ export default function ShowImages({ images,project }: { images: StaticImageData
                   <Image
                     src={image}
                     alt={`image-${i}`}
-                    className={` rounded-3xl object-center ${project?.projectName==="Voodle"?"h-[350px] lg:h-[350px]":"h-[250px] lg:h-[300px]"} `}
+                    className={` rounded-3xl object-center ${projectName==="Voodle"?"h-[350px] lg:h-[350px]":"h-[250px] lg:h-[300px]"} `}
                   />
                 </div>
               ))}

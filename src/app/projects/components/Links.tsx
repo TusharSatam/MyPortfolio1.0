@@ -5,15 +5,13 @@ import DownloadIcon from "@/assets/icons/downloadIcon.svg";
 import ProjectSectionHeader from "@/app/projects/components/ProjectSectionHeader";
 import YoutubeIcon from "@/assets/icons/youtubeicon.svg";
 export default function Links({
-  githubLink,
   liveLink,
   isVideoAvailable,
   appType,
 }: {
-  githubLink: string;
   liveLink: string;
   isVideoAvailable:boolean;
-  appType:string;
+  appType:any;
 }) {
   return (
     <div className="mt-8">
