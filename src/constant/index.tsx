@@ -32,7 +32,7 @@ import GSAPICON from "@/assets/icons/gsap.svg";
 import ShadcnUI from "@/assets/icons/ShadcnUI.svg";
 import Framermotion from "@/assets/icons/framermotion.svg";
 import AndroidStudioIcon from "@/assets/icons/androidstudio.svg";
-import voodleThumbnail from "@/assets/images/VoodleThumbnail.png";
+import voodleThumbnail from "@/assets/images/voodleThumbnail.png";
 import TailwindIcon from "@/assets/icons/tailwind-icon.svg";
 import HtmlIcon from "@/assets/icons/html-icon.svg";
 import CssIcon from "@/assets/icons/css-icon.svg";
