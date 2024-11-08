@@ -451,7 +451,7 @@ And for the users the platform enables them to browse through beauty salons base
     ],
     images: [sukriyaThumbnail, sukriya2, sukriya3, , sukriya4],
     futurePlans: [],
-    link: "https://shukriya-fe-beige.vercel.app/",
+    link: "https://shukriya-fr.vercel.app/",
     isVideoAvailable: false,
     appType: "web",
   },
