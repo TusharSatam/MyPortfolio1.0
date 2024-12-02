@@ -128,7 +128,7 @@ export const PORTFOLIO_PROJECT = [
           "Created a responsive and user-friendly interface using Next.js and Tailwind CSS.",
       },
     ],
-    link: "http://shukriya-fe-beige.vercel.app/",
+    link: "https://shukriya-fr.vercel.app/",
     image: sukriyaThumbnail,
     slug: "projects/sukriya",
     isVideoAvailable: false,
